@@ -1182,7 +1182,7 @@
         "klo": "KLO-1.9",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Convert the following equation written in Cartesian coordinates into an equation in Cylindrical coordinates. \\[{x^3} + 2{x^2} - 6z = 4 - 2{y^2}\\]",
+        "problem": "Convert the following equation written in Cartesian coordinates into an equation in Cylindrical coordinates. \\({x^3} + 2{x^2} - 6z = 4 - 2{y^2}\\)",
         "answer": "\\(r^3\\cos^3\\theta+2r^2\\cos^2\\theta-6z=4-2r^2\\sin^2\\theta\\)",
         "solution": "Substitute \\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\): \\[ r^3\\cos^3\\theta+2r^2\\cos^2\\theta-6z=4-2r^2\\sin^2\\theta. \\]"
       }
@@ -1238,7 +1238,7 @@
         "klo": "KLO-1.9",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Convert the following equation written in Cartesian coordinates into an equation in Spherical coordinates. \\[\\frac{{xz}}{y} = 2 - x\\]",
+        "problem": "Convert the following equation written in Cartesian coordinates into an equation in Spherical coordinates. \\(\\frac{{xz}}{y} = 2 - x\\)",
         "answer": "\\(\\dfrac{\\rho^2\\sin\\varphi\\cos\\varphi\\cos\\theta}{\\sin\\varphi\\sin\\theta}=2-\\rho\\sin\\varphi\\cos\\theta\\), or simplifying, \\(\\rho\\cos\\varphi\\cot\\theta=2-\\rho\\sin\\varphi\\cos\\theta\\).",
         "solution": "Substitute \\(x=\\rho\\sin\\varphi\\cos\\theta\\), \\(y=\\rho\\sin\\varphi\\sin\\theta\\), \\(z=\\rho\\cos\\varphi\\): \\[ \\frac{(\\rho\\sin\\varphi\\cos\\theta)(\\rho\\cos\\varphi)}{\\rho\\sin\\varphi\\sin\\theta}=2-\\rho\\sin\\varphi\\cos\\theta. \\] The \\(\\rho\\sin\\varphi\\) cancels on the left, giving \\[ \\rho\\cos\\varphi\\cot\\theta=2-\\rho\\sin\\varphi\\cos\\theta. \\]"
       },
@@ -1274,7 +1274,7 @@
         "klo": "KLO-1.9",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Convert the following equation written in Cartesian coordinates into an equation in Spherical coordinates. \\[{x^2} + {y^2} = 4x + z - 2\\]",
+        "problem": "Convert the following equation written in Cartesian coordinates into an equation in Spherical coordinates. \\({x^2} + {y^2} = 4x + z - 2\\)",
         "answer": "\\(\\rho^2\\sin^2\\varphi=4\\rho\\sin\\varphi\\cos\\theta+\\rho\\cos\\varphi-2\\)",
         "solution": "Use \\(x^2+y^2=\\rho^2\\sin^2\\varphi\\), \\(x=\\rho\\sin\\varphi\\cos\\theta\\), \\(z=\\rho\\cos\\varphi\\): \\[ \\rho^2\\sin^2\\varphi=4\\rho\\sin\\varphi\\cos\\theta+\\rho\\cos\\varphi-2. \\]"
       }
@@ -1593,7 +1593,7 @@
         "klo": "KLO-2.2",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Find \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following function. \\[{x^2}\\sin \\left( {{y^3}} \\right) + x{{\\bf{e}}^{3z}} - \\cos \\left( {{z^2}} \\right) = 3y - 6z + 8\\]",
+        "problem": "Find \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following function. \\({x^2}\\sin \\left( {{y^3}} \\right) + x{{\\bf{e}}^{3z}} - \\cos \\left( {{z^2}} \\right) = 3y - 6z + 8\\)",
         "answer": "\\(\\dfrac{\\partial z}{\\partial x} = -\\dfrac{2 x \\sin(y^3) + e^{3z}}{3 x e^{3z} + 2 z \\sin(z^2) + 6}\\), \\(\\dfrac{\\partial z}{\\partial y} = \\dfrac{3 - 3 x^2 y^2 \\cos(y^3)}{3 x e^{3z} + 2 z \\sin(z^2) + 6}\\)",
         "solution": "Set \\(F(x,y,z) = x^2 \\sin(y^3) + x e^{3z} - \\cos(z^2) - 3y + 6z - 8\\). Then \\(\\partial z/\\partial x = -F_x/F_z\\) and \\(\\partial z/\\partial y = -F_y/F_z\\). Computing: \\(F_x = 2x\\sin(y^3) + e^{3z}\\), \\(F_y = 3 x^2 y^2 \\cos(y^3) - 3\\), \\(F_z = 3 x e^{3z} + 2 z \\sin(z^2) + 6\\). \\[\\frac{\\partial z}{\\partial x} = -\\frac{2 x \\sin(y^3) + e^{3z}}{3 x e^{3z} + 2 z \\sin(z^2) + 6}, \\qquad \\frac{\\partial z}{\\partial y} = \\frac{3 - 3 x^2 y^2 \\cos(y^3)}{3 x e^{3z} + 2 z \\sin(z^2) + 6}.\\]"
       }
@@ -1752,7 +1752,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dt}}\\) . \\[z = {{\\bf{e}}^{{x^{\\,2}} - y}}\\,\\hspace{0.5in}x = \\sin \\left( {4t} \\right),\\,\\,\\,\\,y = {t^3} - 9\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dt}}\\) . \\(z = {{\\bf{e}}^{{x^{\\,2}} - y}}\\,\\hspace{0.5in}x = \\sin \\left( {4t} \\right),\\,\\,\\,\\,y = {t^3} - 9\\)",
         "answer": "\\(\\dfrac{dz}{dt} = e^{x^2 - y}\\bigl(8 x \\cos(4t) - 3 t^2\\bigr)\\)",
         "solution": "Use \\(\\dfrac{dz}{dt} = z_x \\dfrac{dx}{dt} + z_y \\dfrac{dy}{dt}\\). Here \\(z_x = 2 x e^{x^2 - y}\\), \\(z_y = -e^{x^2 - y}\\), \\(dx/dt = 4\\cos(4t)\\), \\(dy/dt = 3 t^2\\). \\[\\frac{dz}{dt} = 2 x e^{x^2 - y}\\cdot 4\\cos(4t) + (-e^{x^2 - y})(3 t^2) = e^{x^2 - y}\\bigl(8 x \\cos(4t) - 3 t^2\\bigr).\\]"
       },
@@ -1761,7 +1761,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dw}}{{dt}}\\) . \\[w = {x^4} - 4x{y^2} + {z^3}\\,\\hspace{0.5in}x = \\sqrt t ,\\,\\,\\,\\,y = {{\\bf{e}}^{2t}},\\,\\,\\,\\,z = \\frac{1}{t}\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dw}}{{dt}}\\) . \\(w = {x^4} - 4x{y^2} + {z^3}\\,\\hspace{0.5in}x = \\sqrt t ,\\,\\,\\,\\,y = {{\\bf{e}}^{2t}},\\,\\,\\,\\,z = \\frac{1}{t}\\)",
         "answer": "\\(\\dfrac{dw}{dt} = \\dfrac{4 x^3 - 4 y^2}{2\\sqrt{t}} - 16 x y\\, e^{2t} - \\dfrac{3 z^2}{t^2}\\)",
         "solution": "\\(w_x = 4 x^3 - 4 y^2\\), \\(w_y = -8 x y\\), \\(w_z = 3 z^2\\); \\(dx/dt = \\tfrac{1}{2\\sqrt{t}}\\), \\(dy/dt = 2 e^{2t}\\), \\(dz/dt = -1/t^2\\). \\[\\frac{dw}{dt} = (4 x^3 - 4 y^2)\\cdot\\frac{1}{2\\sqrt{t}} + (-8 x y)(2 e^{2t}) + 3 z^2\\cdot\\left(-\\frac{1}{t^2}\\right).\\]"
       },
@@ -1770,7 +1770,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dw}}{{dt}}\\) . \\[w = \\frac{{4x}}{{y\\,{z^3}}}\\,\\hspace{0.5in}x = 7t - 1,\\,\\,\\,\\,y = 1 - 2t,\\,\\,\\,\\,z = {t^4}\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dw}}{{dt}}\\) . \\(w = \\frac{{4x}}{{y\\,{z^3}}}\\,\\hspace{0.5in}x = 7t - 1,\\,\\,\\,\\,y = 1 - 2t,\\,\\,\\,\\,z = {t^4}\\)",
         "answer": "\\(\\dfrac{dw}{dt} = \\dfrac{28}{y z^3} + \\dfrac{8 x}{y^2 z^3} - \\dfrac{48 x t^3}{y z^4}\\)",
         "solution": "\\(w_x = \\dfrac{4}{y z^3}\\), \\(w_y = -\\dfrac{4 x}{y^2 z^3}\\), \\(w_z = -\\dfrac{12 x}{y z^4}\\); \\(dx/dt = 7\\), \\(dy/dt = -2\\), \\(dz/dt = 4 t^3\\). \\[\\frac{dw}{dt} = \\frac{4}{y z^3}(7) + \\left(-\\frac{4 x}{y^2 z^3}\\right)(-2) + \\left(-\\frac{12 x}{y z^4}\\right)(4 t^3) = \\frac{28}{y z^3} + \\frac{8 x}{y^2 z^3} - \\frac{48 x t^3}{y z^4}.\\]"
       },
@@ -1779,7 +1779,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dx}}\\) . \\[z = 2{x^3}{{\\bf{e}}^{4y}}\\,\\hspace{0.5in}y = \\cos \\left( {6x} \\right)\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dx}}\\) . \\(z = 2{x^3}{{\\bf{e}}^{4y}}\\,\\hspace{0.5in}y = \\cos \\left( {6x} \\right)\\)",
         "answer": "\\(\\dfrac{dz}{dx} = 6 x^2 e^{4y} - 48 x^3 e^{4y}\\sin(6x)\\)",
         "solution": "\\(z\\) depends on \\(x\\) directly and through \\(y\\). Use \\(\\dfrac{dz}{dx} = \\dfrac{\\partial z}{\\partial x} + \\dfrac{\\partial z}{\\partial y}\\dfrac{dy}{dx}\\). Here \\(\\partial z/\\partial x = 6 x^2 e^{4y}\\), \\(\\partial z/\\partial y = 8 x^3 e^{4y}\\), \\(dy/dx = -6\\sin(6x)\\). \\[\\frac{dz}{dx} = 6 x^2 e^{4y} + 8 x^3 e^{4y}\\bigl(-6\\sin(6x)\\bigr) = 6 x^2 e^{4y} - 48 x^3 e^{4y}\\sin(6x).\\]"
       },
@@ -1788,7 +1788,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dx}}\\) . \\[z = \\tan \\left( {\\frac{x}{y}} \\right)\\,\\hspace{0.5in}y = {{\\bf{e}}^{{x^{\\,2}}}}\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dx}}\\) . \\(z = \\tan \\left( {\\frac{x}{y}} \\right)\\,\\hspace{0.5in}y = {{\\bf{e}}^{{x^{\\,2}}}}\\)",
         "answer": "\\(\\dfrac{dz}{dx} = \\sec^2\\!\\left(\\dfrac{x}{y}\\right)\\!\\left(\\dfrac{1}{y} - \\dfrac{2 x^2 e^{x^2}}{y^2}\\right)\\)",
         "solution": "\\(\\dfrac{dz}{dx} = \\dfrac{\\partial z}{\\partial x} + \\dfrac{\\partial z}{\\partial y}\\dfrac{dy}{dx}\\). Here \\(\\partial z/\\partial x = \\tfrac{1}{y}\\sec^2(x/y)\\), \\(\\partial z/\\partial y = -\\tfrac{x}{y^2}\\sec^2(x/y)\\), \\(dy/dx = 2 x e^{x^2}\\). \\[\\frac{dz}{dx} = \\frac{\\sec^2(x/y)}{y} + \\left(-\\frac{x \\sec^2(x/y)}{y^2}\\right)(2 x e^{x^2}) = \\sec^2(x/y)\\left(\\frac{1}{y} - \\frac{2 x^2 e^{x^2}}{y^2}\\right).\\]"
       },
@@ -1797,7 +1797,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial z}}{{\\partial u}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial v}}\\) . \\[z = x\\sin \\left( {{y^2} - x} \\right)\\,\\hspace{0.5in}x = 3u - {v^2},\\,\\,\\,\\,y = {u^6}\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial z}}{{\\partial u}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial v}}\\) . \\(z = x\\sin \\left( {{y^2} - x} \\right)\\,\\hspace{0.5in}x = 3u - {v^2},\\,\\,\\,\\,y = {u^6}\\)",
         "answer": "\\(\\dfrac{\\partial z}{\\partial u} = 3\\bigl(\\sin(y^2 - x) - x \\cos(y^2 - x)\\bigr) + 12 x y u^5 \\cos(y^2 - x)\\), \\(\\dfrac{\\partial z}{\\partial v} = -2 v\\bigl(\\sin(y^2 - x) - x \\cos(y^2 - x)\\bigr)\\)",
         "solution": "\\(z_x = \\sin(y^2 - x) - x \\cos(y^2 - x)\\) and \\(z_y = 2 x y \\cos(y^2 - x)\\). With \\(x_u = 3, x_v = -2v, y_u = 6 u^5, y_v = 0\\): \\[\\frac{\\partial z}{\\partial u} = 3 z_x + 6 u^5 z_y, \\qquad \\frac{\\partial z}{\\partial v} = -2 v\\, z_x.\\] Substituting the expressions for \\(z_x, z_y\\) gives the formulas shown."
       },
@@ -1806,7 +1806,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\({w_u}\\) and \\({w_v}\\) . \\[w = {x^4}{y^{ - 3}}{z^2}\\,\\hspace{0.5in}x = {u^2}v,\\,\\,\\,\\,y = 3 - uv,\\,\\,\\,\\,\\,\\,z = 7{u^2} - 10v\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\({w_u}\\) and \\({w_v}\\) . \\(w = {x^4}{y^{ - 3}}{z^2}\\,\\hspace{0.5in}x = {u^2}v,\\,\\,\\,\\,y = 3 - uv,\\,\\,\\,\\,\\,\\,z = 7{u^2} - 10v\\)",
         "answer": "\\(w_u = 8 u v\\, x^3 y^{-3} z^2 + 3 v\\, x^4 y^{-4} z^2 + 28 u\\, x^4 y^{-3} z\\), \\(w_v = u^2 x^3 y^{-3} z^2 \\cdot 4 + 3 u\\, x^4 y^{-4} z^2 - 20\\, x^4 y^{-3} z\\)",
         "solution": "\\(w_x = 4 x^3 y^{-3} z^2\\), \\(w_y = -3 x^4 y^{-4} z^2\\), \\(w_z = 2 x^4 y^{-3} z\\); \\(x_u = 2 u v, x_v = u^2; y_u = -v, y_v = -u; z_u = 14 u, z_v = -10\\). \\[w_u = (4 x^3 y^{-3} z^2)(2 u v) + (-3 x^4 y^{-4} z^2)(-v) + (2 x^4 y^{-3} z)(14 u),\\] \\[w_v = (4 x^3 y^{-3} z^2)(u^2) + (-3 x^4 y^{-4} z^2)(-u) + (2 x^4 y^{-3} z)(-10).\\]"
       },
@@ -1815,7 +1815,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial z}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial s}}\\) . \\[z = 6x + {y^2}\\tan \\left( x \\right)\\,\\hspace{0.5in}x = {p^2} - 3t,\\,\\,\\,\\,y = {s^2} - {t^2},\\,\\,\\,\\,p = {{\\bf{e}}^{3s}}\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial z}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial s}}\\) . \\(z = 6x + {y^2}\\tan \\left( x \\right)\\,\\hspace{0.5in}x = {p^2} - 3t,\\,\\,\\,\\,y = {s^2} - {t^2},\\,\\,\\,\\,p = {{\\bf{e}}^{3s}}\\)",
         "answer": "\\(\\dfrac{\\partial z}{\\partial t} = -3\\bigl(6 + y^2 \\sec^2 x\\bigr) - 4 t y \\tan x\\), \\(\\dfrac{\\partial z}{\\partial s} = 6 p e^{3s}\\bigl(6 + y^2 \\sec^2 x\\bigr) + 4 s y \\tan x\\)",
         "solution": "\\(z_x = 6 + y^2 \\sec^2 x\\) and \\(z_y = 2 y \\tan x\\). For \\(\\partial z/\\partial t\\): \\(x_t = -3\\), \\(y_t = -2 t\\), so \\(z_t = -3 z_x - 2 t z_y\\). For \\(\\partial z/\\partial s\\): \\(x\\) depends on \\(s\\) only through \\(p\\), with \\(x_p = 2 p\\) and \\(p_s = 3 e^{3s}\\); \\(y_s = 2 s\\). Thus \\(z_s = z_x \\cdot 2 p \\cdot 3 e^{3s} + z_y \\cdot 2 s\\). \\[\\frac{\\partial z}{\\partial t} = -3(6 + y^2 \\sec^2 x) - 4 t y \\tan x,\\] \\[\\frac{\\partial z}{\\partial s} = 6 p e^{3s}(6 + y^2 \\sec^2 x) + 4 s y \\tan x.\\]"
       },
@@ -1824,7 +1824,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\({w_p}\\) and \\({w_t}\\) . \\[w = {x^2}{y^4}{z^6} - 2xy\\,\\hspace{0.5in}x = 2p,\\,\\,\\,\\,y = 3tq,\\,\\,\\,\\,\\,\\,z = 3t{p^2},\\,\\,\\,\\,q = 2t\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\({w_p}\\) and \\({w_t}\\) . \\(w = {x^2}{y^4}{z^6} - 2xy\\,\\hspace{0.5in}x = 2p,\\,\\,\\,\\,y = 3tq,\\,\\,\\,\\,\\,\\,z = 3t{p^2},\\,\\,\\,\\,q = 2t\\)",
         "answer": "\\(w_p = 2(2 x y^4 z^6 - 2 y) + 6 t p (6 x^2 y^4 z^5)\\), \\(w_t = (3 q + 6 t)(4 x^2 y^3 z^6 - 2 x) + 3 p^2 (6 x^2 y^4 z^5)\\)",
         "solution": "\\(w_x = 2 x y^4 z^6 - 2 y\\), \\(w_y = 4 x^2 y^3 z^6 - 2 x\\), \\(w_z = 6 x^2 y^4 z^5\\). With \\(x = 2p\\) so \\(x_p = 2\\); \\(z = 3 t p^2\\) so \\(z_p = 6 t p\\); for \\(t\\), \\(y = 3 t q\\) and \\(q = 2 t\\), giving \\(dy/dt = 3 q + 3 t (2) = 3 q + 6 t\\); also \\(z_t = 3 p^2\\). \\[w_p = 2 w_x + 6 t p\\, w_z, \\qquad w_t = (3 q + 6 t) w_y + 3 p^2 w_z.\\] Substituting gives the formulas shown."
       },
@@ -1833,7 +1833,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial w}}{{\\partial u}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial v}}\\) . \\[w = \\frac{{\\sqrt y }}{{{x^2}{z^3}}}\\,\\hspace{0.5in}x = uv,\\,\\,\\,\\,y = {u^2} - {p^3},\\,\\,\\,\\,\\,\\,z = 4qp,\\,\\,\\,\\,p = 2u - 3v,\\,\\,\\,\\,\\,\\,q = {v^2}\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial w}}{{\\partial u}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial v}}\\) . \\(w = \\frac{{\\sqrt y }}{{{x^2}{z^3}}}\\,\\hspace{0.5in}x = uv,\\,\\,\\,\\,y = {u^2} - {p^3},\\,\\,\\,\\,\\,\\,z = 4qp,\\,\\,\\,\\,p = 2u - 3v,\\,\\,\\,\\,\\,\\,q = {v^2}\\)",
         "answer": "\\(\\dfrac{\\partial w}{\\partial u} = v\\, w_x + (2 u - 6 p^2) w_y + 8 q\\, w_z\\), \\(\\dfrac{\\partial w}{\\partial v} = u\\, w_x + 9 p^2 w_y + (8 p v - 12 q) w_z\\), where \\(w_x = -\\dfrac{2\\sqrt{y}}{x^3 z^3},\\ w_y = \\dfrac{1}{2\\sqrt{y}\\, x^2 z^3},\\ w_z = -\\dfrac{3\\sqrt{y}}{x^2 z^4}\\)",
         "solution": "Here \\(x(u,v), y(u,p), z(q,p), p(u,v), q(v)\\). Build the chain: \\(x_u = v\\); \\(\\dfrac{dy}{du} = y_u + y_p p_u = 2u + (-3 p^2)(2) = 2 u - 6 p^2\\); \\(\\dfrac{dz}{du} = z_p p_u = (4 q)(2) = 8 q\\). For \\(v\\): \\(x_v = u\\); \\(\\dfrac{dy}{dv} = y_p p_v = -3 p^2 \\cdot (-3) = 9 p^2\\); \\(\\dfrac{dz}{dv} = z_q q_v + z_p p_v = (4 p)(2 v) + (4 q)(-3) = 8 p v - 12 q\\). \\[\\frac{\\partial w}{\\partial u} = v\\, w_x + (2 u - 6 p^2)\\, w_y + 8 q\\, w_z, \\qquad \\frac{\\partial w}{\\partial v} = u\\, w_x + 9 p^2\\, w_y + (8 p v - 12 q)\\, w_z.\\]"
       },
@@ -1842,7 +1842,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine formulas for \\({w_u}\\) and \\({w_t}\\) for the following situation. \\[w = w\\left( {x,y} \\right)\\hspace{0.5in}x = x\\left( {y,z} \\right),\\,\\,\\,\\,y = y\\left( {u,v} \\right),\\,\\,\\,\\,z = z\\left( {u,t} \\right),\\,\\,\\,\\,v = v\\left( t \\right)\\]",
+        "problem": "Determine formulas for \\({w_u}\\) and \\({w_t}\\) for the following situation. \\(w = w\\left( {x,y} \\right)\\hspace{0.5in}x = x\\left( {y,z} \\right),\\,\\,\\,\\,y = y\\left( {u,v} \\right),\\,\\,\\,\\,z = z\\left( {u,t} \\right),\\,\\,\\,\\,v = v\\left( t \\right)\\)",
         "answer": "\\(w_u = w_x \\bigl(x_y \\cdot y_u\\bigr) + w_y \\cdot y_u\\), \\(w_t = w_x \\bigl(x_y \\cdot y_v \\cdot v_t + x_z \\cdot z_t\\bigr) + w_y \\cdot y_v \\cdot v_t\\)",
         "solution": "Build the dependency tree. \\(u\\) reaches \\(w\\) only through \\(y\\), with \\(y\\) feeding both \\(x\\) and \\(w\\) directly. Since \\(v = v(t)\\), \\(v\\) does not depend on \\(u\\), so \\(y_u\\) is the only contribution. For \\(t\\), the path runs \\(t \\to v \\to y\\) and also \\(t \\to z\\), with \\(z\\) and \\(y\\) feeding \\(x\\). \\[w_u = \\frac{\\partial w}{\\partial x}\\frac{\\partial x}{\\partial y}\\frac{\\partial y}{\\partial u} + \\frac{\\partial w}{\\partial y}\\frac{\\partial y}{\\partial u},\\] \\[w_t = \\frac{\\partial w}{\\partial x}\\!\\left(\\frac{\\partial x}{\\partial y}\\frac{\\partial y}{\\partial v}\\frac{dv}{dt} + \\frac{\\partial x}{\\partial z}\\frac{\\partial z}{\\partial t}\\right) + \\frac{\\partial w}{\\partial y}\\frac{\\partial y}{\\partial v}\\frac{dv}{dt}.\\]"
       },
@@ -1851,7 +1851,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine formulas for \\(\\displaystyle \\frac{{\\partial w}}{{\\partial s}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) for the following situation. \\[w = w\\left( {x,y,z} \\right)\\hspace{0.5in}x = x\\left( {u,v,t} \\right),\\,\\,\\,\\,y = y\\left( p \\right),\\,\\,\\,\\,z = z\\left( {u,t} \\right),\\,\\,\\,\\,v = v\\left( {p,t} \\right),\\,\\,\\,\\,p = p\\left( {s,t} \\right)\\]",
+        "problem": "Determine formulas for \\(\\displaystyle \\frac{{\\partial w}}{{\\partial s}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) for the following situation. \\(w = w\\left( {x,y,z} \\right)\\hspace{0.5in}x = x\\left( {u,v,t} \\right),\\,\\,\\,\\,y = y\\left( p \\right),\\,\\,\\,\\,z = z\\left( {u,t} \\right),\\,\\,\\,\\,v = v\\left( {p,t} \\right),\\,\\,\\,\\,p = p\\left( {s,t} \\right)\\)",
         "answer": "\\(w_s = p_s\\bigl(w_x x_v v_p + w_y y_p\\bigr)\\), \\(w_t = w_x\\bigl(x_t + x_v(v_t + v_p p_t)\\bigr) + w_y y_p p_t + w_z z_t\\)",
         "solution": "Trace the tree. \\(s\\) reaches the function only through \\(p\\) (since \\(p = p(s,t)\\) is the only place \\(s\\) appears), and \\(p\\) feeds \\(y\\) directly and \\(v\\) (which feeds \\(x\\)). For \\(t\\), there are direct paths to \\(x\\) and \\(z\\), plus paths through \\(v\\) and through \\(p\\) (which then reaches both \\(y\\) and \\(v\\)). \\[\\frac{\\partial w}{\\partial s} = \\frac{\\partial p}{\\partial s}\\!\\left(\\frac{\\partial w}{\\partial x}\\frac{\\partial x}{\\partial v}\\frac{\\partial v}{\\partial p} + \\frac{\\partial w}{\\partial y}\\frac{dy}{dp}\\right),\\] \\[\\frac{\\partial w}{\\partial t} = \\frac{\\partial w}{\\partial x}\\!\\left(\\frac{\\partial x}{\\partial t} + \\frac{\\partial x}{\\partial v}\\!\\left(\\frac{\\partial v}{\\partial t} + \\frac{\\partial v}{\\partial p}\\frac{\\partial p}{\\partial t}\\right)\\right) + \\frac{\\partial w}{\\partial y}\\frac{dy}{dp}\\frac{\\partial p}{\\partial t} + \\frac{\\partial w}{\\partial z}\\frac{\\partial z}{\\partial t}.\\]"
       },
@@ -1860,7 +1860,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Compute \\(\\displaystyle \\frac{{dy}}{{dx}}\\) for the following equation. \\[\\cos \\left( {2x + 3y} \\right) = {x^5} - 8{y^2}\\]",
+        "problem": "Compute \\(\\displaystyle \\frac{{dy}}{{dx}}\\) for the following equation. \\(\\cos \\left( {2x + 3y} \\right) = {x^5} - 8{y^2}\\)",
         "answer": "\\(\\dfrac{dy}{dx} = \\dfrac{5 x^4 + 2 \\sin(2x + 3y)}{16 y - 3 \\sin(2x + 3y)}\\)",
         "solution": "Set \\(F(x,y) = \\cos(2x+3y) - x^5 + 8 y^2 = 0\\). Then \\(F_x = -2\\sin(2x+3y) - 5 x^4\\) and \\(F_y = -3\\sin(2x+3y) + 16 y\\). The implicit derivative is \\(dy/dx = -F_x/F_y\\). \\[\\frac{dy}{dx} = -\\frac{-2\\sin(2x+3y) - 5 x^4}{-3\\sin(2x+3y) + 16 y} = \\frac{5 x^4 + 2\\sin(2x+3y)}{16 y - 3\\sin(2x+3y)}.\\]"
       },
@@ -1869,7 +1869,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Compute \\(\\displaystyle \\frac{{dy}}{{dx}}\\) for the following equation. \\[\\cos \\left( {2x} \\right)\\sin \\left( {3y} \\right) - xy = {y^4} + 9\\]",
+        "problem": "Compute \\(\\displaystyle \\frac{{dy}}{{dx}}\\) for the following equation. \\(\\cos \\left( {2x} \\right)\\sin \\left( {3y} \\right) - xy = {y^4} + 9\\)",
         "answer": "\\(\\dfrac{dy}{dx} = -\\dfrac{2\\sin(2x)\\sin(3y) + y}{3\\cos(2x)\\cos(3y) - x - 4 y^3}\\)",
         "solution": "Set \\(F(x,y) = \\cos(2x)\\sin(3y) - x y - y^4 - 9 = 0\\). Then \\(F_x = -2\\sin(2x)\\sin(3y) - y\\) and \\(F_y = 3\\cos(2x)\\cos(3y) - x - 4 y^3\\). \\[\\frac{dy}{dx} = -\\frac{F_x}{F_y} = \\frac{2\\sin(2x)\\sin(3y) + y}{3\\cos(2x)\\cos(3y) - x - 4 y^3}\\cdot(-1) = -\\frac{2\\sin(2x)\\sin(3y) + y}{3\\cos(2x)\\cos(3y) - x - 4 y^3}.\\]"
       },
@@ -1878,7 +1878,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Compute \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following equation. \\[{z^3}{y^4} - {x^2}\\cos \\left( {2y - 4z} \\right) = 4z\\]",
+        "problem": "Compute \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following equation. \\({z^3}{y^4} - {x^2}\\cos \\left( {2y - 4z} \\right) = 4z\\)",
         "answer": "\\(\\dfrac{\\partial z}{\\partial x} = \\dfrac{2 x \\cos(2y - 4z)}{3 z^2 y^4 - 4 x^2 \\sin(2y - 4z) - 4}\\), \\(\\dfrac{\\partial z}{\\partial y} = \\dfrac{-2 x^2 \\sin(2y - 4z) - 4 z^3 y^3}{3 z^2 y^4 - 4 x^2 \\sin(2y - 4z) - 4}\\)",
         "solution": "Set \\(F = z^3 y^4 - x^2 \\cos(2y - 4z) - 4 z\\). Then \\(F_x = -2 x \\cos(2y - 4z)\\), \\(F_y = 4 z^3 y^3 + 2 x^2 \\sin(2y - 4z)\\), \\(F_z = 3 z^2 y^4 - 4 x^2 \\sin(2y - 4z) - 4\\). Apply \\(\\partial z/\\partial x = -F_x/F_z\\) and \\(\\partial z/\\partial y = -F_y/F_z\\). \\[\\frac{\\partial z}{\\partial x} = \\frac{2 x \\cos(2y - 4z)}{3 z^2 y^4 - 4 x^2 \\sin(2y - 4z) - 4},\\] \\[\\frac{\\partial z}{\\partial y} = -\\frac{4 z^3 y^3 + 2 x^2 \\sin(2y - 4z)}{3 z^2 y^4 - 4 x^2 \\sin(2y - 4z) - 4}.\\]"
       },
@@ -1887,7 +1887,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Compute \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following equation. \\[\\sin \\left( x \\right){{\\bf{e}}^{4x\\,z}} + 2{z^2}y = \\cos \\left( z \\right)\\]",
+        "problem": "Compute \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following equation. \\(\\sin \\left( x \\right){{\\bf{e}}^{4x\\,z}} + 2{z^2}y = \\cos \\left( z \\right)\\)",
         "answer": "\\(\\dfrac{\\partial z}{\\partial x} = -\\dfrac{\\cos(x) e^{4 x z} + 4 z \\sin(x) e^{4 x z}}{4 x \\sin(x) e^{4 x z} + 4 z y + \\sin(z)}\\), \\(\\dfrac{\\partial z}{\\partial y} = -\\dfrac{2 z^2}{4 x \\sin(x) e^{4 x z} + 4 z y + \\sin(z)}\\)",
         "solution": "Set \\(F = \\sin(x) e^{4 x z} + 2 z^2 y - \\cos(z)\\). Then \\(F_x = \\cos(x) e^{4 x z} + 4 z \\sin(x) e^{4 x z}\\), \\(F_y = 2 z^2\\), \\(F_z = 4 x \\sin(x) e^{4 x z} + 4 z y + \\sin(z)\\). \\[\\frac{\\partial z}{\\partial x} = -\\frac{F_x}{F_z}, \\qquad \\frac{\\partial z}{\\partial y} = -\\frac{F_y}{F_z}.\\]"
       },
@@ -1896,7 +1896,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine \\({f_{u\\,u}}\\) and \\({f_{v\\,v}}\\) for the following situation. \\[f = f\\left( {x,y} \\right)\\hspace{0.5in}x = {{\\bf{e}}^u}sin\\left( v \\right),\\,\\,\\,\\,\\,\\,\\,y = {{\\bf{e}}^u}\\cos \\left( v \\right)\\]",
+        "problem": "Determine \\({f_{u\\,u}}\\) and \\({f_{v\\,v}}\\) for the following situation. \\(f = f\\left( {x,y} \\right)\\hspace{0.5in}x = {{\\bf{e}}^u}sin\\left( v \\right),\\,\\,\\,\\,\\,\\,\\,y = {{\\bf{e}}^u}\\cos \\left( v \\right)\\)",
         "answer": "\\(f_{uu} = e^u(f_x \\sin v + f_y \\cos v) + e^{2u}\\bigl(f_{xx}\\sin^2 v + 2 f_{xy}\\sin v\\cos v + f_{yy}\\cos^2 v\\bigr)\\), \\(f_{vv} = -e^u(f_x \\sin v + f_y \\cos v) + e^{2u}\\bigl(f_{xx}\\cos^2 v - 2 f_{xy}\\sin v\\cos v + f_{yy}\\sin^2 v\\bigr)\\)",
         "solution": "\\(x_u = e^u\\sin v\\), \\(y_u = e^u\\cos v\\), \\(x_v = e^u\\cos v\\), \\(y_v = -e^u\\sin v\\). First, \\(f_u = e^u(f_x \\sin v + f_y \\cos v)\\). Differentiate again, treating \\(f_x\\) and \\(f_y\\) as functions of \\(u, v\\) and applying the chain rule again: \\[f_{uu} = e^u(f_x \\sin v + f_y \\cos v) + e^{2u}\\bigl(f_{xx}\\sin^2 v + 2 f_{xy}\\sin v \\cos v + f_{yy}\\cos^2 v\\bigr).\\] For \\(v\\), \\(f_v = e^u(f_x \\cos v - f_y \\sin v)\\), and a second application yields \\[f_{vv} = -e^u(f_x \\sin v + f_y \\cos v) + e^{2u}\\bigl(f_{xx}\\cos^2 v - 2 f_{xy}\\sin v \\cos v + f_{yy}\\sin^2 v\\bigr).\\]"
       },
@@ -1905,7 +1905,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine \\({f_{u\\,u}}\\) and \\({f_{v\\,v}}\\) for the following situation. \\[f = f\\left( {x,y} \\right)\\hspace{0.5in}x = {u^2} - {v^2},\\,\\,\\,\\,\\,\\,\\,y = \\frac{u}{v}\\]",
+        "problem": "Determine \\({f_{u\\,u}}\\) and \\({f_{v\\,v}}\\) for the following situation. \\(f = f\\left( {x,y} \\right)\\hspace{0.5in}x = {u^2} - {v^2},\\,\\,\\,\\,\\,\\,\\,y = \\frac{u}{v}\\)",
         "answer": "\\(f_{uu} = 2 f_x + 4 u^2 f_{xx} + \\dfrac{4 u}{v} f_{xy} + \\dfrac{1}{v^2} f_{yy}\\), \\(f_{vv} = -2 f_x + \\dfrac{2 u}{v^3} f_y + 4 v^2 f_{xx} + \\dfrac{4 u}{v} f_{xy} + \\dfrac{u^2}{v^4} f_{yy}\\)",
         "solution": "\\(x_u = 2u, y_u = 1/v, x_v = -2v, y_v = -u/v^2\\). \\(f_u = 2 u f_x + (1/v) f_y\\). Differentiating again and chaining \\(f_x, f_y\\) through \\(u\\): \\[f_{uu} = 2 f_x + 2 u\\bigl(2 u f_{xx} + (1/v) f_{xy}\\bigr) + (1/v)\\bigl(2 u f_{xy} + (1/v) f_{yy}\\bigr) = 2 f_x + 4 u^2 f_{xx} + \\tfrac{4 u}{v} f_{xy} + \\tfrac{1}{v^2} f_{yy}.\\] For \\(v\\), \\(f_v = -2 v f_x - (u/v^2) f_y\\), so \\[f_{vv} = -2 f_x + \\tfrac{2 u}{v^3} f_y + 4 v^2 f_{xx} + \\tfrac{4 u}{v} f_{xy} + \\tfrac{u^2}{v^4} f_{yy}.\\]"
       },
@@ -1914,7 +1914,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dt}}\\) . \\[z = \\cos \\left( {y\\,{x^2}} \\right)\\,\\hspace{0.5in}x = {t^4} - 2t,\\,\\,\\,\\,y = 1 - {t^6}\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dt}}\\) . \\(z = \\cos \\left( {y\\,{x^2}} \\right)\\,\\hspace{0.5in}x = {t^4} - 2t,\\,\\,\\,\\,y = 1 - {t^6}\\)",
         "answer": "\\(\\dfrac{dz}{dt} = -\\sin(y x^2)\\bigl(2 x y(4 t^3 - 2) - 6 t^5 x^2\\bigr)\\)",
         "solution": "\\(z_x = -2 x y \\sin(y x^2)\\), \\(z_y = -x^2 \\sin(y x^2)\\); \\(dx/dt = 4 t^3 - 2\\), \\(dy/dt = -6 t^5\\). \\[\\frac{dz}{dt} = -2 x y \\sin(y x^2)(4 t^3 - 2) + (-x^2 \\sin(y x^2))(-6 t^5) = -\\sin(y x^2)\\bigl(2 x y(4 t^3 - 2) - 6 t^5 x^2\\bigr).\\]"
       },
@@ -1923,7 +1923,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dw}}{{dt}}\\) . \\[w = \\frac{{{x^2} - z}}{{{y^4}}}\\,\\hspace{0.5in}x = {t^3} + 7,\\,\\,\\,\\,y = \\cos \\left( {2t} \\right),\\,\\,\\,\\,z = 4t\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dw}}{{dt}}\\) . \\(w = \\frac{{{x^2} - z}}{{{y^4}}}\\,\\hspace{0.5in}x = {t^3} + 7,\\,\\,\\,\\,y = \\cos \\left( {2t} \\right),\\,\\,\\,\\,z = 4t\\)",
         "answer": "\\(\\dfrac{dw}{dt} = \\dfrac{6 t^2 x}{y^4} + \\dfrac{4(x^2 - z) \\sin(2t)}{y^5}\\cdot 4 - \\dfrac{4}{y^4}\\), simplified: \\(\\dfrac{dw}{dt} = \\dfrac{6 t^2 x}{y^4} + \\dfrac{8(x^2 - z)\\sin(2t)}{y^5} - \\dfrac{4}{y^4}\\)",
         "solution": "\\(w_x = 2 x/y^4\\), \\(w_y = -4(x^2 - z)/y^5\\), \\(w_z = -1/y^4\\); \\(dx/dt = 3 t^2\\), \\(dy/dt = -2\\sin(2t)\\), \\(dz/dt = 4\\). \\[\\frac{dw}{dt} = \\frac{2 x}{y^4}(3 t^2) + \\left(-\\frac{4(x^2 - z)}{y^5}\\right)(-2\\sin(2t)) + \\left(-\\frac{1}{y^4}\\right)(4) = \\frac{6 t^2 x}{y^4} + \\frac{8(x^2-z)\\sin(2t)}{y^5} - \\frac{4}{y^4}.\\]"
       },
@@ -1932,7 +1932,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dx}}\\) . \\[z = {x^2}{y^4} - 2y\\,\\hspace{0.5in}y = \\sin \\left( {{x^2}} \\right)\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{dz}}{{dx}}\\) . \\(z = {x^2}{y^4} - 2y\\,\\hspace{0.5in}y = \\sin \\left( {{x^2}} \\right)\\)",
         "answer": "\\(\\dfrac{dz}{dx} = 2 x y^4 + (4 x^2 y^3 - 2)\\cdot 2 x \\cos(x^2)\\)",
         "solution": "\\(z\\) depends on \\(x\\) directly and through \\(y\\). \\(\\partial z/\\partial x = 2 x y^4\\), \\(\\partial z/\\partial y = 4 x^2 y^3 - 2\\), \\(dy/dx = 2 x \\cos(x^2)\\). \\[\\frac{dz}{dx} = 2 x y^4 + (4 x^2 y^3 - 2)(2 x \\cos(x^2)).\\]"
       },
@@ -1941,7 +1941,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial z}}{{\\partial u}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial v}}\\) . \\[z = {x^{ - 2}}{y^6} - 4x\\,\\hspace{0.5in}x = {u^2}v,\\,\\,\\,\\,y = v - 3u\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial z}}{{\\partial u}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial v}}\\) . \\(z = {x^{ - 2}}{y^6} - 4x\\,\\hspace{0.5in}x = {u^2}v,\\,\\,\\,\\,y = v - 3u\\)",
         "answer": "\\(\\dfrac{\\partial z}{\\partial u} = 2 u v\\,(-2 x^{-3} y^6 - 4) - 3\\cdot 6 x^{-2} y^5\\), \\(\\dfrac{\\partial z}{\\partial v} = u^2(-2 x^{-3} y^6 - 4) + 6 x^{-2} y^5\\)",
         "solution": "\\(z_x = -2 x^{-3} y^6 - 4\\), \\(z_y = 6 x^{-2} y^5\\); \\(x_u = 2 u v\\), \\(x_v = u^2\\), \\(y_u = -3\\), \\(y_v = 1\\). \\[\\frac{\\partial z}{\\partial u} = (-2 x^{-3} y^6 - 4)(2 u v) + (6 x^{-2} y^5)(-3),\\] \\[\\frac{\\partial z}{\\partial v} = (-2 x^{-3} y^6 - 4)(u^2) + (6 x^{-2} y^5)(1).\\]"
       },
@@ -1950,7 +1950,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\({z_t}\\) and \\({z_p}\\) . \\[z = 4y\\sin \\left( {2x} \\right)\\,\\hspace{0.5in}x = 3u - p,\\,\\,\\,\\,y = {p^2}u,\\,\\,\\,\\,\\,\\,u = {t^2} + 1\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\({z_t}\\) and \\({z_p}\\) . \\(z = 4y\\sin \\left( {2x} \\right)\\,\\hspace{0.5in}x = 3u - p,\\,\\,\\,\\,y = {p^2}u,\\,\\,\\,\\,\\,\\,u = {t^2} + 1\\)",
         "answer": "\\(z_t = 8 y \\cos(2x)\\cdot 6 t + 4 \\sin(2x)\\cdot 2 p^2 t\\), \\(z_p = -8 y \\cos(2x) + 8 p u \\sin(2x)\\)",
         "solution": "\\(z_x = 8 y \\cos(2x)\\), \\(z_y = 4 \\sin(2x)\\); \\(u = t^2 + 1\\), so \\(u_t = 2t\\). With \\(x = 3 u - p\\): \\(\\partial x/\\partial t = 3 u_t = 6 t\\), \\(\\partial x/\\partial p = -1\\). With \\(y = p^2 u\\): \\(\\partial y/\\partial t = p^2 u_t = 2 p^2 t\\), \\(\\partial y/\\partial p = 2 p u\\). \\[z_t = 8 y \\cos(2x)\\cdot 6 t + 4 \\sin(2x)\\cdot 2 p^2 t = 48 t y \\cos(2x) + 8 p^2 t \\sin(2x),\\] \\[z_p = 8 y \\cos(2x)\\cdot(-1) + 4 \\sin(2x)\\cdot 2 p u = -8 y \\cos(2x) + 8 p u \\sin(2x).\\]"
       },
@@ -1959,7 +1959,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial s}}\\) . \\[w = \\sqrt {{x^2} + {y^2}} + \\frac{{6z}}{y}\\,\\hspace{0.5in}x = \\sin \\left( p \\right),\\,\\,\\,\\,y = p + 3t - 4s,\\,\\,\\,\\,z = \\frac{{{t^3}}}{{{s^2}}},\\,\\,\\,\\,p = 1 - 2t\\]",
+        "problem": "Use the Chain Rule to compute the requested derivative. Given the following information use the Chain Rule to determine \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial s}}\\) . \\(w = \\sqrt {{x^2} + {y^2}} + \\frac{{6z}}{y}\\,\\hspace{0.5in}x = \\sin \\left( p \\right),\\,\\,\\,\\,y = p + 3t - 4s,\\,\\,\\,\\,z = \\frac{{{t^3}}}{{{s^2}}},\\,\\,\\,\\,p = 1 - 2t\\)",
         "answer": "\\(w_t = w_x \\cos(p)(-2) + w_y\\bigl(-2 + 3\\bigr) + w_z\\dfrac{3 t^2}{s^2} = -2\\cos(p) w_x + w_y + \\dfrac{3 t^2}{s^2} w_z\\), \\(w_s = -4\\, w_y - \\dfrac{2 t^3}{s^3} w_z\\), where \\(w_x = \\dfrac{x}{\\sqrt{x^2+y^2}},\\ w_y = \\dfrac{y}{\\sqrt{x^2+y^2}} - \\dfrac{6 z}{y^2},\\ w_z = \\dfrac{6}{y}\\)",
         "solution": "Variables: \\(x = \\sin p\\), \\(y = p + 3 t - 4 s\\), \\(z = t^3/s^2\\), \\(p = 1 - 2t\\). For \\(t\\): \\(p_t = -2\\); \\(\\partial x/\\partial t = \\cos(p) \\cdot p_t = -2\\cos(p)\\); direct \\(\\partial y/\\partial t = 3 + p_t \\cdot 1 = 3 + (-2)\\cdot 1\\) only counts the \\(p\\)-path once, so total \\(dy/dt = -2 + 3 = 1\\); \\(\\partial z/\\partial t = 3 t^2/s^2\\). For \\(s\\): \\(p\\) does not depend on \\(s\\), so \\(dx/ds = 0\\); \\(dy/ds = -4\\); \\(dz/ds = -2 t^3/s^3\\). \\[\\frac{\\partial w}{\\partial t} = -2 \\cos(p)\\, w_x + w_y + \\frac{3 t^2}{s^2}\\, w_z, \\qquad \\frac{\\partial w}{\\partial s} = -4\\, w_y - \\frac{2 t^3}{s^3}\\, w_z.\\]"
       },
@@ -1968,7 +1968,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine formulas for \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial v}}\\) for the following situation. \\[w = w\\left( {x,y} \\right)\\hspace{0.5in}x = x\\left( {p,q,s} \\right),\\,\\,\\,\\,y = y\\left( {p,u,v} \\right),\\,\\,\\,\\,s = s\\left( {u,v} \\right),\\,\\,\\,\\,p = p\\left( t \\right)\\]",
+        "problem": "Determine formulas for \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial v}}\\) for the following situation. \\(w = w\\left( {x,y} \\right)\\hspace{0.5in}x = x\\left( {p,q,s} \\right),\\,\\,\\,\\,y = y\\left( {p,u,v} \\right),\\,\\,\\,\\,s = s\\left( {u,v} \\right),\\,\\,\\,\\,p = p\\left( t \\right)\\)",
         "answer": "\\(\\dfrac{\\partial w}{\\partial t} = p_t\\bigl(w_x x_p + w_y y_p\\bigr)\\), \\(\\dfrac{\\partial w}{\\partial v} = w_x\\, x_s\\, s_v + w_y\\, y_v\\)",
         "solution": "Trace the tree. \\(t\\) flows only into \\(p\\), and \\(p\\) feeds both \\(x\\) (via \\(x(p,q,s)\\)) and \\(y\\) (via \\(y(p,u,v)\\)). \\(v\\) feeds \\(y\\) directly and feeds \\(x\\) through \\(s\\) (via \\(s(u,v)\\)). \\[\\frac{\\partial w}{\\partial t} = \\frac{dp}{dt}\\!\\left(\\frac{\\partial w}{\\partial x}\\frac{\\partial x}{\\partial p} + \\frac{\\partial w}{\\partial y}\\frac{\\partial y}{\\partial p}\\right),\\] \\[\\frac{\\partial w}{\\partial v} = \\frac{\\partial w}{\\partial x}\\frac{\\partial x}{\\partial s}\\frac{\\partial s}{\\partial v} + \\frac{\\partial w}{\\partial y}\\frac{\\partial y}{\\partial v}.\\]"
       },
@@ -1977,7 +1977,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine formulas for \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial u}}\\) for the following situation. \\[w = w\\left( {x,y,z} \\right)\\hspace{0.5in}x = x\\left( t \\right),\\,\\,\\,\\,y = y\\left( {u,v,p} \\right),\\,\\,\\,\\,z = z\\left( {v,p} \\right),\\,\\,\\,\\,v = v\\left( {r,u} \\right),\\,\\,\\,\\,p = p\\left( {t,u} \\right)\\]",
+        "problem": "Determine formulas for \\(\\displaystyle \\frac{{\\partial w}}{{\\partial t}}\\) and \\(\\displaystyle \\frac{{\\partial w}}{{\\partial u}}\\) for the following situation. \\(w = w\\left( {x,y,z} \\right)\\hspace{0.5in}x = x\\left( t \\right),\\,\\,\\,\\,y = y\\left( {u,v,p} \\right),\\,\\,\\,\\,z = z\\left( {v,p} \\right),\\,\\,\\,\\,v = v\\left( {r,u} \\right),\\,\\,\\,\\,p = p\\left( {t,u} \\right)\\)",
         "answer": "\\(\\dfrac{\\partial w}{\\partial t} = w_x\\, x_t + p_t\\bigl(w_y\\, y_p + w_z\\, z_p\\bigr)\\), \\(\\dfrac{\\partial w}{\\partial u} = w_y\\bigl(y_u + y_v\\, v_u + y_p\\, p_u\\bigr) + w_z\\bigl(z_v\\, v_u + z_p\\, p_u\\bigr)\\)",
         "solution": "For \\(t\\): only \\(x = x(t)\\) and \\(p = p(t,u)\\) depend on \\(t\\); \\(p\\) then feeds \\(y\\) and \\(z\\). For \\(u\\): \\(y\\) depends on \\(u\\) directly, and through \\(v(r,u)\\) and \\(p(t,u)\\); \\(z\\) depends on \\(u\\) through \\(v\\) and \\(p\\); \\(x\\) does not depend on \\(u\\). \\[\\frac{\\partial w}{\\partial t} = \\frac{\\partial w}{\\partial x}\\frac{dx}{dt} + \\frac{\\partial p}{\\partial t}\\!\\left(\\frac{\\partial w}{\\partial y}\\frac{\\partial y}{\\partial p} + \\frac{\\partial w}{\\partial z}\\frac{\\partial z}{\\partial p}\\right),\\] \\[\\frac{\\partial w}{\\partial u} = \\frac{\\partial w}{\\partial y}\\!\\left(\\frac{\\partial y}{\\partial u} + \\frac{\\partial y}{\\partial v}\\frac{\\partial v}{\\partial u} + \\frac{\\partial y}{\\partial p}\\frac{\\partial p}{\\partial u}\\right) + \\frac{\\partial w}{\\partial z}\\!\\left(\\frac{\\partial z}{\\partial v}\\frac{\\partial v}{\\partial u} + \\frac{\\partial z}{\\partial p}\\frac{\\partial p}{\\partial u}\\right).\\]"
       },
@@ -1986,7 +1986,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Compute \\(\\displaystyle \\frac{{dy}}{{dx}}\\) for the following equation. \\[{x^2}{y^4} - 3 = \\sin \\left( {xy} \\right)\\]",
+        "problem": "Compute \\(\\displaystyle \\frac{{dy}}{{dx}}\\) for the following equation. \\({x^2}{y^4} - 3 = \\sin \\left( {xy} \\right)\\)",
         "answer": "\\(\\dfrac{dy}{dx} = \\dfrac{y\\bigl(\\cos(xy) - 2 x y^3\\bigr)}{x\\bigl(4 x y^3 - \\cos(xy)\\bigr)}\\)",
         "solution": "Set \\(F = x^2 y^4 - \\sin(xy) - 3\\). Then \\(F_x = 2 x y^4 - y\\cos(xy)\\) and \\(F_y = 4 x^2 y^3 - x\\cos(xy)\\). \\[\\frac{dy}{dx} = -\\frac{F_x}{F_y} = -\\frac{2 x y^4 - y\\cos(xy)}{4 x^2 y^3 - x\\cos(xy)} = \\frac{y\\bigl(\\cos(xy) - 2 x y^3\\bigr)}{x\\bigl(4 x y^3 - \\cos(xy)\\bigr)}.\\]"
       },
@@ -1995,7 +1995,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Compute \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following equation. \\[{{\\bf{e}}^{z\\,y}} + x{z^2} = 6x{y^4}{z^3}\\]",
+        "problem": "Compute \\(\\displaystyle \\frac{{\\partial z}}{{\\partial x}}\\) and \\(\\displaystyle \\frac{{\\partial z}}{{\\partial y}}\\) for the following equation. \\({{\\bf{e}}^{z\\,y}} + x{z^2} = 6x{y^4}{z^3}\\)",
         "answer": "\\(\\dfrac{\\partial z}{\\partial x} = \\dfrac{z^2(6 y^4 z - 1)}{2 x z + y e^{z y} - 18 x y^4 z^2}\\), \\(\\dfrac{\\partial z}{\\partial y} = \\dfrac{z(24 x y^3 z^2 - e^{z y})}{2 x z + y e^{z y} - 18 x y^4 z^2}\\)",
         "solution": "Set \\(F = e^{z y} + x z^2 - 6 x y^4 z^3\\). Then \\(F_x = z^2 - 6 y^4 z^3\\), \\(F_y = z e^{z y} - 24 x y^3 z^3\\), \\(F_z = y e^{z y} + 2 x z - 18 x y^4 z^2\\). \\[\\frac{\\partial z}{\\partial x} = -\\frac{z^2 - 6 y^4 z^3}{y e^{z y} + 2 x z - 18 x y^4 z^2} = \\frac{z^2(6 y^4 z - 1)}{2 x z + y e^{z y} - 18 x y^4 z^2},\\] \\[\\frac{\\partial z}{\\partial y} = -\\frac{z e^{z y} - 24 x y^3 z^3}{y e^{z y} + 2 x z - 18 x y^4 z^2} = \\frac{z(24 x y^3 z^2 - e^{z y})}{2 x z + y e^{z y} - 18 x y^4 z^2}.\\]"
       },
@@ -2004,7 +2004,7 @@
         "klo": "KLO-2.5",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine \\({f_{u\\,u}}\\) for the following situation. \\[f = f\\left( {x,y} \\right)\\hspace{0.5in}x = {u^2} + 3v,\\,\\,\\,\\,\\,\\,\\,y = uv\\]",
+        "problem": "Determine \\({f_{u\\,u}}\\) for the following situation. \\(f = f\\left( {x,y} \\right)\\hspace{0.5in}x = {u^2} + 3v,\\,\\,\\,\\,\\,\\,\\,y = uv\\)",
         "answer": "\\(f_{uu} = 2 f_x + 4 u^2 f_{xx} + 4 u v\\, f_{xy} + v^2 f_{yy}\\)",
         "solution": "\\(x_u = 2 u\\), \\(y_u = v\\). Then \\(f_u = 2 u f_x + v f_y\\). Differentiate again, chaining \\(f_x, f_y\\) through \\(u\\): \\[f_{uu} = 2 f_x + 2 u\\bigl(f_{xx}\\cdot 2u + f_{xy}\\cdot v\\bigr) + v\\bigl(f_{xy}\\cdot 2u + f_{yy}\\cdot v\\bigr) = 2 f_x + 4 u^2 f_{xx} + 4 u v\\, f_{xy} + v^2 f_{yy}.\\]"
       }
@@ -2787,7 +2787,7 @@
         "klo": "KLO-4.4",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in polar coordinates. \\[\\int_{{ - 2}}^{0}{{\\int_{{ - \\sqrt {4 - {y^{\\,2}}} }}^{{\\sqrt {4 - {y^{\\,2}}} }}{{\\,\\,\\,{x^2}\\,dx}}\\,dy}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in polar coordinates. \\(\\int_{{ - 2}}^{0}{{\\int_{{ - \\sqrt {4 - {y^{\\,2}}} }}^{{\\sqrt {4 - {y^{\\,2}}} }}{{\\,\\,\\,{x^2}\\,dx}}\\,dy}}\\)",
         "answer": "\\(2\\pi\\)",
         "solution": "The region is the lower half of the disk \\(x^2+y^2\\le 4\\): \\(\\theta\\in[\\pi,2\\pi]\\), \\(r\\in[0,2]\\). With \\(x^2 = r^2\\cos^2\\theta\\): \\[ \\int_{\\pi}^{2\\pi}\\!\\!\\int_{0}^{2} r^2\\cos^2\\theta\\cdot r\\,dr\\,d\\theta = \\int_{\\pi}^{2\\pi}\\cos^2\\theta\\,d\\theta\\cdot 4 = \\tfrac{\\pi}{2}\\cdot 4 = 2\\pi. \\]"
       },
@@ -2796,7 +2796,7 @@
         "klo": "KLO-4.4",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in polar coordinates. \\[\\int_{{ - 1}}^{1}{{\\int_{0}^{{\\sqrt {1 - {x^{\\,2}}} }}{{\\,\\,\\,\\sqrt {{x^2} + {y^2}} \\,dy}}\\,dx}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in polar coordinates. \\(\\int_{{ - 1}}^{1}{{\\int_{0}^{{\\sqrt {1 - {x^{\\,2}}} }}{{\\,\\,\\,\\sqrt {{x^2} + {y^2}} \\,dy}}\\,dx}}\\)",
         "answer": "\\(\\dfrac{\\pi}{3}\\)",
         "solution": "Top half of the unit disk: \\(\\theta\\in[0,\\pi]\\), \\(r\\in[0,1]\\), and \\(\\sqrt{x^2+y^2}=r\\): \\[ \\int_{0}^{\\pi}\\!\\!\\int_{0}^{1} r\\cdot r\\,dr\\,d\\theta = \\pi\\cdot\\tfrac{1}{3} = \\tfrac{\\pi}{3}. \\]"
       },
@@ -2886,7 +2886,7 @@
         "klo": "KLO-4.4",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in polar coordinates. \\[\\int_{0}^{3}{{\\int_{{ - \\sqrt {9 - {x^{\\,2}}} }}^{0}{{\\,\\,\\,{{\\bf{e}}^{{x^{\\,2}} + {y^{\\,2}}}}\\,dy}}\\,dx}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in polar coordinates. \\(\\int_{0}^{3}{{\\int_{{ - \\sqrt {9 - {x^{\\,2}}} }}^{0}{{\\,\\,\\,{{\\bf{e}}^{{x^{\\,2}} + {y^{\\,2}}}}\\,dy}}\\,dx}}\\)",
         "answer": "\\(\\tfrac{\\pi}{4}(e^9 - 1)\\)",
         "solution": "4th quadrant of disk \\(r=3\\): \\(\\theta\\in[-\\pi/2,0]\\), \\(r\\in[0,3]\\). \\[ \\int_{-\\pi/2}^{0}\\!\\!\\int_{0}^{3} e^{r^2} r\\,dr\\,d\\theta = \\tfrac{\\pi}{2}\\cdot\\tfrac{1}{2}(e^9-1) = \\tfrac{\\pi}{4}(e^9-1). \\]"
       },
@@ -3268,7 +3268,7 @@
         "klo": "KLO-4.6",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\[\\int_{{ - 4}}^{4}{{\\int_{0}^{{\\sqrt {16 - {y^{\\,2}}} }}{{\\int_{0}^{{6 + x}}{{\\,\\,\\,6y{x^2}\\,\\,dz}}\\,dx}}\\,dy}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\(\\int_{{ - 4}}^{4}{{\\int_{0}^{{\\sqrt {16 - {y^{\\,2}}} }}{{\\int_{0}^{{6 + x}}{{\\,\\,\\,6y{x^2}\\,\\,dz}}\\,dx}}\\,dy}}\\)",
         "answer": "\\(0\\)",
         "solution": "Cylindrical (\\(x=r\\cos\\theta\\), \\(y=r\\sin\\theta\\)): right half disk \\(\\theta\\in[-\\pi/2,\\pi/2]\\), \\(r\\in[0,4]\\), \\(z\\in[0,6+r\\cos\\theta]\\). The integrand \\(6yx^2\\) becomes \\(6r^3\\sin\\theta\\cos^2\\theta\\), which is odd in \\(\\theta\\) about 0; the integral is \\(0\\)."
       },
@@ -3277,7 +3277,7 @@
         "klo": "KLO-4.6",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\[\\int_{0}^{3}{{\\int_{{ - \\sqrt {9 - {x^{\\,2}}} }}^{{\\sqrt {9 - {x^{\\,2}}} }}{{\\int_{{ - \\sqrt {2{x^{\\,2}} + 2{y^{\\,2}}} }}^{{6 + {x^{\\,2}} + {y^{\\,2}}}}{{\\,\\,\\,15z\\,\\,dz}}\\,dy}}\\,dx}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\(\\int_{0}^{3}{{\\int_{{ - \\sqrt {9 - {x^{\\,2}}} }}^{{\\sqrt {9 - {x^{\\,2}}} }}{{\\int_{{ - \\sqrt {2{x^{\\,2}} + 2{y^{\\,2}}} }}^{{6 + {x^{\\,2}} + {y^{\\,2}}}}{{\\,\\,\\,15z\\,\\,dz}}\\,dy}}\\,dx}}\\)",
         "answer": "\\(3645\\pi\\)",
         "solution": "Cylindrical: right half disk \\(\\theta\\in[-\\pi/2,\\pi/2]\\), \\(r\\in[0,3]\\); \\(z\\in[-\\sqrt 2 r,\\,6+r^2]\\). \\[ \\int 15z\\,dz = \\tfrac{15}{2}\\big[(6+r^2)^2 - 2r^2\\big] = \\tfrac{15}{2}(36 + 10r^2 + r^4). \\] \\[ \\pi\\cdot\\tfrac{15}{2}\\int_{0}^{3}(36r + 10r^3 + r^5)\\,dr = \\pi\\cdot\\tfrac{15}{2}\\cdot 486 = 3645\\pi. \\]"
       },
@@ -3331,7 +3331,7 @@
         "klo": "KLO-4.6",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\[\\int_{0}^{{\\sqrt 5 }}{{\\int_{{ - \\sqrt {5 - {x^{\\,2}}} }}^{0}{{\\int_{{{x^{\\,2}} + {y^{\\,2}} - 11}}^{{9 - 3{x^{\\,2}} - 3{y^{\\,2}}}}{{\\,\\,\\,2x - 3y\\,\\,\\,dz}}\\,dy}}\\,dx}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\(\\int_{0}^{{\\sqrt 5 }}{{\\int_{{ - \\sqrt {5 - {x^{\\,2}}} }}^{0}{{\\int_{{{x^{\\,2}} + {y^{\\,2}} - 11}}^{{9 - 3{x^{\\,2}} - 3{y^{\\,2}}}}{{\\,\\,\\,2x - 3y\\,\\,\\,dz}}\\,dy}}\\,dx}}\\)",
         "answer": "\\(\\dfrac{200\\sqrt 5}{3}\\)",
         "solution": "Cylindrical: 4th-quadrant quarter disk \\(\\theta\\in[-\\pi/2,0]\\), \\(r\\in[0,\\sqrt 5]\\); \\(z\\in[r^2-11,\\,9-3r^2]\\) (width \\(20-4r^2\\)). \\[ \\int_{-\\pi/2}^{0}(2\\cos\\theta-3\\sin\\theta)\\,d\\theta\\cdot\\int_{0}^{\\sqrt 5}(20r^2-4r^4)\\,dr = 5\\cdot\\tfrac{40\\sqrt 5}{3} = \\tfrac{200\\sqrt 5}{3}. \\]"
       }
@@ -3405,7 +3405,7 @@
         "klo": "KLO-4.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\[\\int_{0}^{2}{{\\int_{{ - \\sqrt {4 - {x^{\\,2}}} }}^{0}{{\\int_{{\\sqrt {5{x^{\\,2}} + 5{y^{\\,2}}} }}^{{\\sqrt {9 - {x^{\\,2}} - {y^{\\,2}}} }}{{\\,\\,\\,7x\\,\\,\\,dz}}\\,dy}}\\,dx}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\(\\int_{0}^{2}{{\\int_{{ - \\sqrt {4 - {x^{\\,2}}} }}^{0}{{\\int_{{\\sqrt {5{x^{\\,2}} + 5{y^{\\,2}}} }}^{{\\sqrt {9 - {x^{\\,2}} - {y^{\\,2}}} }}{{\\,\\,\\,7x\\,\\,\\,dz}}\\,dy}}\\,dx}}\\)",
         "answer": "\\(\\tfrac{567}{8}\\arcsin(\\tfrac{2}{3}) - \\tfrac{119\\sqrt 5}{4}\\)",
         "solution": "4th-quadrant quarter disk in cylindrical: \\(\\theta\\in[-\\pi/2,0]\\), \\(r\\in[0,2]\\); \\(z\\in[\\sqrt 5\\,r,\\sqrt{9-r^2}]\\). \\[ \\int 7x\\,dz = 7r\\cos\\theta\\big[\\sqrt{9-r^2} - \\sqrt 5\\,r\\big]. \\] With \\(\\int_{-\\pi/2}^{0}\\cos\\theta\\,d\\theta = 1\\) and \\(r=3\\sin\\alpha\\) for the radical, the radial integral evaluates to \\(\\tfrac{81}{8}\\arcsin(\\tfrac{2}{3}) - \\tfrac{17\\sqrt 5}{4}\\). Multiplying by 7 gives the stated answer."
       },
@@ -3414,7 +3414,7 @@
         "klo": "KLO-4.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\[\\int_{{ - \\sqrt 5 }}^{{\\sqrt 5 }}{{\\int_{0}^{{\\sqrt {5 - {y^{\\,2}}} }}{{\\int_{{ - \\sqrt {10 - {x^{\\,2}} - {y^{\\,2}}} }}^{{ - \\sqrt {{x^{\\,2}} + {y^{\\,2}}} }}{{\\,\\,\\,3x{z^2}\\,\\,\\,dz}}\\,dx}}\\,dy}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in cylindrical coordinates. \\(\\int_{{ - \\sqrt 5 }}^{{\\sqrt 5 }}{{\\int_{0}^{{\\sqrt {5 - {y^{\\,2}}} }}{{\\int_{{ - \\sqrt {10 - {x^{\\,2}} - {y^{\\,2}}} }}^{{ - \\sqrt {{x^{\\,2}} + {y^{\\,2}}} }}{{\\,\\,\\,3x{z^2}\\,\\,\\,dz}}\\,dx}}\\,dy}}\\)",
         "answer": "\\(\\dfrac{125\\pi}{4}\\)",
         "solution": "Right half disk \\(r\\le\\sqrt 5\\), \\(\\theta\\in[-\\pi/2,\\pi/2]\\); \\(z\\in[-\\sqrt{10-r^2},\\,-r]\\). \\[ \\int 3xz^2\\,dz = r\\cos\\theta\\big[(10-r^2)^{3/2} - r^3\\big]. \\] \\[ \\int_{-\\pi/2}^{\\pi/2}\\cos\\theta\\,d\\theta\\cdot\\int_{0}^{\\sqrt 5} r^2\\big[(10-r^2)^{3/2}-r^3\\big]\\,dr = 2\\cdot\\tfrac{125\\pi}{8} = \\tfrac{125\\pi}{4} \\] (the radial integral uses \\(r=\\sqrt{10}\\sin\\alpha\\) and \\(\\int_{0}^{\\pi/4}\\sin^2\\alpha\\cos^4\\alpha\\,d\\alpha = \\tfrac{\\pi}{64}+\\tfrac{1}{48}\\))."
       },
@@ -3468,7 +3468,7 @@
         "klo": "KLO-4.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Evaluate the following integral by first converting to an integral in spherical coordinates. \\[\\int_{{ - 1}}^{0}{{\\int_{{ - \\sqrt {1 - {x^{\\,2}}} }}^{{\\sqrt {1 - {x^{\\,2}}} }}{{\\int_{{\\sqrt {6{x^{\\,2}} + 6{y^{\\,2}}} }}^{{\\sqrt {7 - {x^{\\,2}} - {y^{\\,2}}} }}{{\\,\\,\\,18y\\,\\,\\,dz}}\\,dy}}\\,dx}}\\]",
+        "problem": "Evaluate the following integral by first converting to an integral in spherical coordinates. \\(\\int_{{ - 1}}^{0}{{\\int_{{ - \\sqrt {1 - {x^{\\,2}}} }}^{{\\sqrt {1 - {x^{\\,2}}} }}{{\\int_{{\\sqrt {6{x^{\\,2}} + 6{y^{\\,2}}} }}^{{\\sqrt {7 - {x^{\\,2}} - {y^{\\,2}}} }}{{\\,\\,\\,18y\\,\\,\\,dz}}\\,dy}}\\,dx}}\\)",
         "answer": "\\(0\\)",
         "solution": "\\(x\\in[-1,0]\\), \\(y\\) full chord of unit disk gives \\(\\theta\\in[\\pi/2,3\\pi/2]\\). The integrand \\(18y\\) has \\(\\sin\\theta\\), and \\(\\int_{\\pi/2}^{3\\pi/2}\\sin\\theta\\,d\\theta = 0\\). The integral is \\(0\\)."
       }
@@ -4357,7 +4357,7 @@
         "klo": "KLO-5.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Give a parametrization of the given surface. The tangent plane to the surface given by the following parametric equation at the point \\(\\left( { - 5,4, - 12} \\right)\\). \\[\\vec r\\left( {u,v} \\right) = \\left( {u + 2v} \\right)\\vec i + \\left( {{u^2} + 3} \\right)\\vec j - 3{v^2}\\vec k\\]",
+        "problem": "Give a parametrization of the given surface. The tangent plane to the surface given by the following parametric equation at the point \\(\\left( { - 5,4, - 12} \\right)\\). \\(\\vec r\\left( {u,v} \\right) = \\left( {u + 2v} \\right)\\vec i + \\left( {{u^2} + 3} \\right)\\vec j - 3{v^2}\\vec k\\)",
         "answer": "\\(6x + 3y - z = -6\\) (equivalently \\(-24(x+5) - 12(y-4) + 4(z+12) = 0\\))",
         "solution": "Find the parameter values: \\(u + 2v = -5\\), \\(u^2 + 3 = 4\\), \\(-3v^2 = -12\\). The middle gives \\(u = \\pm 1\\); pairing with the first and third forces \\(u = -1,\\, v = -2\\). Compute partials: \\(\\vec r_u = \\langle 1, 2u, 0\\rangle = \\langle 1, -2, 0\\rangle\\) and \\(\\vec r_v = \\langle 2, 0, -6v\\rangle = \\langle 2, 0, 12\\rangle\\). \\[\\vec r_u \\times \\vec r_v = \\langle (-2)(12) - 0,\\, -(1)(12) + 0,\\, 0 - (-2)(2)\\rangle = \\langle -24,\\, -12,\\, 4\\rangle.\\]The tangent plane is \\(-24(x+5) - 12(y-4) + 4(z+12) = 0\\), which simplifies to \\(6x + 3y - z = -6\\)."
       },
@@ -4366,7 +4366,7 @@
         "klo": "KLO-5.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Give a parametrization of the given surface. The tangent plane to the surface given by the following parametric equation at the point \\(\\left( {1, - 11,19} \\right)\\). \\[\\vec r\\left( {u,v} \\right) = \\left\\langle {{{\\bf{e}}^{6 - 2v}},{u^2} - 15,1 - u{v^2}} \\right\\rangle \\]",
+        "problem": "Give a parametrization of the given surface. The tangent plane to the surface given by the following parametric equation at the point \\(\\left( {1, - 11,19} \\right)\\). \\(\\vec r\\left( {u,v} \\right) = \\left\\langle {{{\\bf{e}}^{6 - 2v}},{u^2} - 15,1 - u{v^2}} \\right\\rangle \\)",
         "answer": "\\(24x - 9y + 4z = 199\\) (equivalently \\(-48(x-1) + 18(y+11) - 8(z-19) = 0\\))",
         "solution": "Find \\((u,v)\\): \\(e^{6-2v} = 1 \\Rightarrow v = 3\\); \\(u^2 = 4\\); \\(1 - uv^2 = 19 \\Rightarrow u = -2\\) (which is consistent with \\(u^2 = 4\\)). Then \\(\\vec r_u = \\langle 0,\\, 2u,\\, -v^2\\rangle = \\langle 0,\\, -4,\\, -9\\rangle\\) and \\(\\vec r_v = \\langle -2 e^{6-2v},\\, 0,\\, -2uv\\rangle = \\langle -2,\\, 0,\\, 12\\rangle\\). \\[\\vec r_u \\times \\vec r_v = \\langle (-4)(12) - 0,\\, -(0 - 18),\\, 0 - 8\\rangle = \\langle -48,\\, 18,\\, -8\\rangle.\\]The tangent plane: \\(-48(x-1) + 18(y+11) - 8(z-19) = 0\\), i.e. \\(24x - 9y + 4z = 199\\)."
       },
@@ -4420,7 +4420,7 @@
         "klo": "KLO-5.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine the surface area of the portion of the surface given by the following parametric equation that lies above the triangle in the \\(uv\\)-plane with vertices\\(\\left( {0,0} \\right)\\), \\(\\left( {10,2} \\right)\\) and \\(\\left( {0,2} \\right)\\). \\[\\vec r\\left( {u,v} \\right) = \\left\\langle {{v^2},3v,2u} \\right\\rangle \\]",
+        "problem": "Determine the surface area of the portion of the surface given by the following parametric equation that lies above the triangle in the \\(uv\\)-plane with vertices\\(\\left( {0,0} \\right)\\), \\(\\left( {10,2} \\right)\\) and \\(\\left( {0,2} \\right)\\). \\(\\vec r\\left( {u,v} \\right) = \\left\\langle {{v^2},3v,2u} \\right\\rangle \\)",
         "answer": "\\(\\dfrac{245}{3}\\)",
         "solution": "Compute \\(\\vec r_u = \\langle 0, 0, 2\\rangle\\) and \\(\\vec r_v = \\langle 2v, 3, 0\\rangle\\), so \\[\\vec r_u \\times \\vec r_v = \\langle -6,\\, 4v,\\, 0\\rangle, \\qquad |\\vec r_u \\times \\vec r_v| = 2\\sqrt{9 + 4v^2}.\\]The triangle has vertices \\((0,0),(10,2),(0,2)\\); the line from \\((0,0)\\) to \\((10,2)\\) is \\(u = 5v\\). For \\(0 \\le v \\le 2\\), \\(u\\) runs \\(0\\) to \\(5v\\). \\[\\text{SA} = \\int_0^2 \\int_0^{5v} 2\\sqrt{9 + 4v^2}\\, du\\, dv = \\int_0^2 10v\\sqrt{9 + 4v^2}\\, dv = \\frac{5}{6}(9 + 4v^2)^{3/2}\\Big|_0^2 = \\frac{5}{6}(125 - 27) = \\frac{245}{3}.\\]"
       },
@@ -4429,7 +4429,7 @@
         "klo": "KLO-5.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Determine the surface area of the portion of the surface given by the following parametric equation that lies above the region in the \\(uv\\)-plane bounded by \\(\\displaystyle v = \\frac{3}{2}{u^2}\\), \\(u = 2\\) and the \\(u\\)-axis. \\[\\vec r\\left( {u,v} \\right) = \\left\\langle {uv,3uv,v} \\right\\rangle \\]",
+        "problem": "Determine the surface area of the portion of the surface given by the following parametric equation that lies above the region in the \\(uv\\)-plane bounded by \\(\\displaystyle v = \\frac{3}{2}{u^2}\\), \\(u = 2\\) and the \\(u\\)-axis. \\(\\vec r\\left( {u,v} \\right) = \\left\\langle {uv,3uv,v} \\right\\rangle \\)",
         "answer": "\\(\\dfrac{36\\sqrt{10}}{5}\\)",
         "solution": "With \\(\\vec r_u = \\langle v, 3v, 0\\rangle\\) and \\(\\vec r_v = \\langle u, 3u, 1\\rangle\\), \\[\\vec r_u \\times \\vec r_v = \\langle 3v,\\, -v,\\, 0\\rangle, \\qquad |\\vec r_u \\times \\vec r_v| = v\\sqrt{10}\\quad(v \\ge 0).\\]The region is \\(0 \\le u \\le 2\\), \\(0 \\le v \\le \\tfrac{3}{2}u^2\\). \\[\\text{SA} = \\sqrt{10}\\int_0^2 \\int_0^{3u^2/2} v\\, dv\\, du = \\sqrt{10}\\int_0^2 \\tfrac{1}{2}\\left(\\tfrac{3u^2}{2}\\right)^2 du = \\frac{9\\sqrt{10}}{8}\\cdot\\frac{32}{5} = \\frac{36\\sqrt{10}}{5}.\\]"
       },
@@ -4483,7 +4483,7 @@
         "klo": "KLO-5.7",
         "tier": "Medium",
         "prompt": "",
-        "problem": "Give a parametrization of the given surface. The tangent plane to the surface given by the following parametric equation at the point \\(\\left( {8,14,2} \\right)\\). \\[\\vec r\\left( {u,v} \\right) = \\left( {{u^2} + 2u} \\right)\\vec i + \\left( {3v - 2u} \\right)\\vec j + \\left( {6v - 10} \\right)\\vec k\\]",
+        "problem": "Give a parametrization of the given surface. The tangent plane to the surface given by the following parametric equation at the point \\(\\left( {8,14,2} \\right)\\). \\(\\vec r\\left( {u,v} \\right) = \\left( {{u^2} + 2u} \\right)\\vec i + \\left( {3v - 2u} \\right)\\vec j + \\left( {6v - 10} \\right)\\vec k\\)",
         "answer": "\\(2x - 6y + 3z = -62\\) (equivalently \\(-12(x-8) + 36(y-14) - 18(z-2) = 0\\))",
         "solution": "Solve for \\((u,v)\\): \\(6v - 10 = 2 \\Rightarrow v = 2\\); \\(3v - 2u = 14 \\Rightarrow u = -4\\); check \\(u^2 + 2u = 16 - 8 = 8\\) ✓. Then \\(\\vec r_u = \\langle 2u+2, -2, 0\\rangle = \\langle -6, -2, 0\\rangle\\) and \\(\\vec r_v = \\langle 0, 3, 6\\rangle\\). \\[\\vec r_u \\times \\vec r_v = \\langle -12,\\, 36,\\, -18\\rangle.\\]The tangent plane: \\(-12(x-8) + 36(y-14) - 18(z-2) = 0\\), or \\(2x - 6y + 3z = -62\\)."
       },
